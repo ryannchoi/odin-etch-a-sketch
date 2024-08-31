@@ -1,0 +1,112 @@
+:root {
+    --item-width: 31.25px;
+    --item-height: 31.25px;
+    --color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    font-family: 'Roboto';
+}
+
+.logo { 
+    font-weight: bold;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 32px;
+}
+
+.logo h1 {
+    font-size: 80px;
+}
+
+#container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 6px #ccc;
+    background-color: white;
+    
+}
+
+.container_item {
+    user-select: none;
+    width: var(--item-width);
+    height: var(--item-height);
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    background-color: white;
+}
+
+input[type="range"] {
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0.9375rem;
+    height: 0.26881rem;
+    background: #fff;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center; 
+    gap: 20px;
+}
+
+.dynamic_size {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: inherit;
+    background-color: inherit;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+#color-picker {
+    -webkit-appearance: none;   
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+.paint_color {
+    background-color: var(--color);
+}
+
+
